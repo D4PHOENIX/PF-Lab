@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int x, y;
+    int x, y, temp;
     cout << "Enter the value of x: ";
     cin >> x;
     cout << "Enter the value of y: ";
@@ -10,7 +10,9 @@ int main() {
 
     switch (x == y) {
         case 0:
-            swap(x, y);
+            temp = x;
+            x = y;
+            y = temp;
             cout << "After swapping, x = " << x << " and y = " << y << endl;
             break;
         case 1:
