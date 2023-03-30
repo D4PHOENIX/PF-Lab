@@ -6,6 +6,7 @@ int main(){
 	const int size=5;
 	
 	int roll_no[size];
+	char userName[30][255];
 	// int subjectMarks[size];
 	int physicsMarks[size];
 	int mathMarks[size];
@@ -22,6 +23,8 @@ int main(){
     	cout<<"\nPlease enter the data for 5 student No." << i+1<< " subjects."<<endl;
     	cout<<"Roll NO.:";
     	cin>>roll_no[i];
+		cout<<"Enter the name of the students: ";
+		getline(cin,userName[i]);
     	// cout<<"Marks out of (500):";
     	// cin>>subjectMarks[i];
 		cout<<"Enter the marks of Physics: ";
@@ -52,7 +55,7 @@ int main(){
 		<<setw(12)<<"Percentage"<<"\tGrade"<<endl;
 		
 		for(int i=0; i<size; i++){
-		cout<<setw(9)<<roll_no[i]<<setw(7)<<totalMarks[i]
+		cout<<setw(9)<<roll_no[i]<<setw(30)<<userName[i]<<setw(7)<<totalMarks[i]
 		<<setw(12)
 		<<setprecision(2) //digit after decimal point
 		<<setiosflags(ios::showpoint) //always show decimal point

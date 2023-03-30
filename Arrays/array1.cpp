@@ -2,18 +2,19 @@
 using namespace std;
 
 int main(){
-    int loc1, loc2, small, large, i, j, k;
+    int loc1, loc2, small, large;
     int average, sum = 0;
     const int size = 5;
-    int num[size] = {25,69,50,10,84};
     
-    for (i = 0; i < 5; i++){
+    int num[5] = {25,69,50,10,84};
+    
+    for (int i = 0; i < 5; i++){
         cout<<"Enter number for array: ";
         cin>>num[i];
     }
 
     large = num[0];
-    for(j = 0; j<size; j++)
+    for(int j = 0; j<size; j++)
         if (num[j] >= large){
             loc1 = j;
             large = num[j];
@@ -21,7 +22,7 @@ int main(){
     cout<<"\nThe largest number in the array is "<<large<<" at "<<loc1<<" index.\n";
     
     small = num[0];
-    for (k = 0; k<size; k++)
+    for (int k = 0; k<size; k++)
         if (num[k] <= small){
             loc2 = k;
             small = num[k];

@@ -1,22 +1,10 @@
-#include <iostream>
-using namespace std;
-
-int main(){
-    int num1, j, i;
-    cout<<"Enter a number: ";
-    cin>>num1;
-
-    bool prime = true;
-    
-        for (i=3;i<=num1; i+=2){
-            for (j=3;j<=i;j +=2){
-                if (i%j==0){
-                    break;
-                }
-            }
+for(i=0; i<3;i++){
+        for(j=0; j<3;j++){
+            result[i][j] = matrix[i][j]*vector[i][0];
         }
-    if(prime == true)
-        cout<<i<<"\n";
-
-return 0;
-}
+    }
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            cout<<result[i][j]<<"\t";
+        }
+    }

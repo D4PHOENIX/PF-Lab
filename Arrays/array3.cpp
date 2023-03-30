@@ -5,7 +5,7 @@ int main(){
     const int n = 2;
     const int m = 3;
     
-    int matrix [n][m] = {{69,45,36},{69,43,98}};
+    int matrix [2][3] = {{69,45,36},{69,43,98}};
 
     double sum = 0; 
     double average;
