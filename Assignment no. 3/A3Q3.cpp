@@ -9,7 +9,7 @@ int main(){
     for(i=0;i<3;i++){
         for(j=0;j<3;j++){
             cout<<"Enter elements for first matrix: "; 
-            cin>>matrix1[0][0];
+            cin>>matrix1[i][j];
         }
     }
     // Initializing second Matrix
@@ -33,6 +33,7 @@ int main(){
         for(j=0;j<3;j++){
             cout<<sum[i][j]<<"\t";
         }
+        cout<<"\n";
     }
     cout<<"\n\n"; 
 return 0;
