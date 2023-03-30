@@ -17,7 +17,7 @@ int main(){
         for(j=0;j<3;j++){
             cout<<"Enter elements for second matrix: ";
             cin>>matrix2[i][j];
-        }                                                               
+        }
     }
     // Adding both Matrices
     for (i=0;i<3;i++){
