@@ -2,16 +2,13 @@
 using namespace std;
 int main()
 {
-	int n=1,first = 0;
-	int limit =6,second = 1,sum =0;
-	
-	do
-	{
-		sum = first + second;
-		first = second;
-		second = sum;
-		cout<<first<<" , ";		
-		n++;
-	}
-	while(n<limit);
+	string fullName;
+// 	cout<<"Enter Registration number: ",       cin>>students[i].regNo;
+//         cout<<"Enter marks obtained in English: ", cin>>students[i].engMarks;
+//         cout<<"Enter marks obtained in Math: ",    cin>>students[i].mathMarks;
+//         cout<<"Enter marks obtained in ICT: ",     cin>>students[i].ICTMarks;
+//         cout<<"Enter marks obtained in Physics: ", cin>>students[i].phyMarks;
+//         cout<<"Enter marks obtained in PF: ",      cin>>students[i].PFMarks;
+        cin.ignore();
+        cout<<"Enter Name of student: ";           getline(cin,fullName);
 }
