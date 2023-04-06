@@ -1,10 +1,15 @@
-for(i=0; i<3;i++){
-        for(j=0; j<3;j++){
-            result[i][j] = matrix[i][j]*vector[i][0];
-        }
+#include <iostream>
+using namespace std;
+
+int main(){
+    int rows = 6;
+    int i,j,n=1;
+    for (i=0; i<rows;i++){
+        for (j=0; j<=i;j++){
+            cout<<n<<" ";
+            n++;
+            }
+    cout<<endl;
     }
-    for(i=0;i<3;i++){
-        for(j=0;j<3;j++){
-            cout<<result[i][j]<<"\t";
-        }
-    }
+return 0;    
+}
