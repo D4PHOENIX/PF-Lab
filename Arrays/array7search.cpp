@@ -13,10 +13,11 @@ int main(){
     cout<<"Enter a number: ";
     cin>>inputNum;
 
-    for(int i = 0; i<size; i++)
-        if (search[i] == inputNum)
+    for(int i = 0; i<size; i++){
+        if (search[i] == inputNum){
             count++;
-
+        }
+    }
     cout<<"\n\nThe number you entered appears "<<count<<" times in the array.\n";
 
 return 0;

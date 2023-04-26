@@ -10,13 +10,13 @@ struct employee{    //user define aggregate datatype
 	};
 void writeEmployeeData(employee emp){
 	ofstream myfile("xyz.txt", ios::app);
-	if(myfile.is_open()){
+	// if(myfile.is_open()){
 		myfile<<emp.name<< " " <<emp.age<< " " << emp.salary<<endl;
 		myfile.close();
 		cout<<"employee record has been written";
-	}else{
+	// }else{
 		cout<<"unable to open your file"<<endl;
-	}
+	// }
 }
 
 void readEmployeeData(){
